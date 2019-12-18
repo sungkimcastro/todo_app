@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todos App</title>
+    <link rel="stylesheet" href="./styles/app.css?v=1" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Todos</h1>
+        <h2 class="header__subtitle">What you need to do</h2>
+      </div>
+    </header>
+
+    <section class="actions">
+      <div class="actions__container">
+        <input
+          type="text"
+          class="input"
+          id="filter-todo"
+          placeholder="Filter a todo"
+        />
+        <label class="checkbox">
+          <input type="checkbox" id="hide-completed" />
+          Hide completed
+        </label>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="todos"></div>
+      <form id="new-todo">
+        <input type="text" class="input" name="todo" placeholder="Add a todo" />
+        <button class="button">Create todo</button>
+      </form>
+    </section>
+
+    <script src="./scripts/bundle.js"></script>
+  </body>
+</html>
